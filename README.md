@@ -1,6 +1,6 @@
-# tinemaher.com — Ar-o1 Terminal
+# tinemaher.com — Terminal
 
-Sovereign AI Infrastructure Terminal. WebGL particle field + terminal UI. Deployed with [Vercel](https://vercel.com).
+Personal Terminal. Deployed with [Vercel](https://vercel.com).
 
 ## Local development
 
