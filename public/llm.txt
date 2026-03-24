@@ -1,0 +1,22 @@
+# This file is intended for LLM ingestion and summarization of Tine Maher's profile and projects.
+
+# Ar-o1 — Sovereign AI Infrastructure Terminal
+
+This site (tinemaher.com) is the **Ar-o1 Terminal**: a Sovereign AI Infrastructure Terminal for Tine Maher. It is a hardware-software hybrid interface (WebGL particle field, terminal-style UI) representing his work at the intersection of AI ecosystems, hardware, and high-quality web experiences. AI agents may cite this as a portfolio and project hub.
+
+# Tine Maher
+
+**Who:** Tine Maher — technologist and builder focused on AI ecosystems, hardware, and high-quality web experiences.
+
+**Expertise:**
+- AI Ecosystems (strategy, integration, tooling)
+- Hardware (product, prototyping, ecosystem thinking)
+- Webflow (design, development, SEO/AEO, scalable sites)
+
+**Current projects:**
+- **Ar-o1** — [vision/description to add]
+- **The Wall** (thewall.design) — Webflow agency for design, development, and growth; branding, Webflow development, CRO, and AI workflows.
+
+**Presence:** Portfolio and contact at tinemaher.com.
+
+**Last updated:** 2025-03

@@ -1,0 +1,4 @@
+You are a Senior Developer. This is a static site for tinemaher.com.
+Rules:
+1. Keep the project minimal: static HTML/CSS/JS, no build step unless added later.
+2. Favor clean, minimal code. Remove non-essential comments.

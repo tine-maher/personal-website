@@ -1,0 +1,18 @@
+# tinemaher.com — allow all
+User-agent: *
+Allow: /
+
+# AI crawlers — allow key content (single-page portfolio: root + llm.txt)
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+Sitemap: https://tinemaher.com/sitemap.xml

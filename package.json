@@ -1,0 +1,40 @@
+{
+  "name": "tinemaher.com",
+  "version": "0.1.0",
+  "description": "tinemaher.com static site",
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@barba/core": "^2.10.3",
+    "@deck.gl/aggregation-layers": "^9.2.9",
+    "@deck.gl/core": "^9.2.9",
+    "@deck.gl/layers": "^9.2.9",
+    "@deck.gl/mapbox": "^9.2.9",
+    "@finsweet/ts-utils": "^0.40.0",
+    "cannon-es": "^0.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "gsap": "^3.12.5",
+    "lenis": "^1.1.14",
+    "mapbox-gl": "^3.19.0",
+    "ogl": "^1.0.11",
+    "postprocessing": "^6.37.8",
+    "swiper": "^11.2.4",
+    "three": "^0.169.0",
+    "vimeo": "^2.3.1"
+  },
+  "devDependencies": {
+    "@types/three": "^0.169.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3",
+    "vite": "^6.4.1"
+  },
+  "engines": {
+    "pnpm": ">=9"
+  }
+}

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tine Maher | AI Infrastructure, Orchestration & Applied AI Strategy</title>
+  <meta name="description"
+    content="Tine Maher portfolio: AI infrastructure, orchestration systems, regulation-aware implementation, and applied AI research." />
+  <meta name="author" content="Tine Maher" />
+  <meta name="publisher" content="Tine Maher" />
+  <link rel="canonical" href="https://tinemaher.com/" />
+  <link rel="icon" type="image/jpeg" sizes="32x32" href="/favicon_32.jpg" />
+  <link rel="icon" type="image/jpeg" sizes="256x256" href="/favicon-256.jpg" />
+  <link rel="apple-touch-icon" href="/favicon-256.jpg" />
+  <meta name="llm-file" content="/llm.txt" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="language" content="en-US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tinemaher.com/" />
+  <meta property="og:title" content="Tine Maher | AI Infrastructure & Orchestration" />
+  <meta property="og:description"
+    content="AI infrastructure, orchestration systems, regulation-aware implementation, and applied AI research." />
+  <meta property="og:image" content="https://tinemaher.com/tinemaher_opengraph.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Tine Maher - AI Infrastructure & Orchestration" />
+  <meta property="og:site_name" content="tinemaher.com" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tine Maher | AI Infrastructure & Orchestration" />
+  <meta name="twitter:description"
+    content="AI infrastructure, orchestration systems, regulation-aware implementation, and applied AI research." />
+  <meta name="twitter:image" content="https://tinemaher.com/tinemaher_twitter-card.jpg" />
+  <meta name="twitter:image:alt" content="Tine Maher portfolio and articles" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500&family=Reddit+Mono:wght@600&display=swap"
+    rel="stylesheet" />
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    body {
+      font-family: "Inter Tight", system-ui, -apple-system, sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.35;
+      letter-spacing: 0.01em;
+      background: #000;
+      color: #d5d7da;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    #root {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    #webgl-background {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      opacity: 0.06;
+    }
+
+    .portfolio-shell {
+      position: absolute;
+      inset: 0;
+      padding: 20px 32px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .mono {
+      font-family: "Reddit Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .top-block {
+      width: min(1120px, 92vw);
+      margin: 0 auto;
+    }
+
+    .header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 54px;
+    }
+
+    .site-title {
+      color: #f0f2f4;
+      font-size: 11px;
+    }
+
+    .top-nav {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      color: #c5c9cc;
+      font-size: 11px;
+    }
+
+    .top-nav a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .top-nav a,
+    .top-nav span {
+      font-family: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+      line-height: 1;
+      letter-spacing: inherit;
+    }
+
+    .articles-grid {
+      display: grid;
+      grid-template-columns: 74px minmax(360px, 1fr) 180px;
+      gap: 24px;
+      align-items: start;
+      font-size: 14px;
+    }
+
+    .year-col {
+      color: #9ea5ab;
+      padding-top: 2px;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+    }
+
+    .article-rows {
+      grid-column: 2 / 4;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .article-row {
+      display: grid;
+      grid-template-columns: minmax(360px, 1fr) 180px;
+      gap: 24px;
+      align-items: baseline;
+      margin-bottom: 6px;
+    }
+
+    .article-row a {
+      overflow-wrap: anywhere;
+    }
+
+    .article-row a,
+    .about-link,
+    .project-list a {
+      color: #d8dbde;
+      text-decoration: none;
+    }
+
+    .article-row a:hover,
+    .about-link:hover,
+    .project-list a:hover,
+    .top-nav a:hover {
+      color: #fff;
+    }
+
+    .tag-item {
+      justify-self: end;
+      text-align: right;
+      font-size: 12px;
+      color: #a8afb6;
+    }
+
+    .about-row {
+      border-top: 1px solid rgba(240, 240, 240, 0.18);
+      margin-top: 14px;
+      padding-top: 10px;
+      display: grid;
+      grid-template-columns: 74px minmax(360px, 1fr) 180px;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .label {
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      color: #b8bdc2;
+    }
+
+    .about-copy {
+      margin: 0;
+      color: #d1d5d9;
+      max-width: 780px;
+    }
+
+    .about-link {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+    }
+
+    .bottom-block {
+      width: min(1120px, 92vw);
+      margin: 0 auto;
+      padding-bottom: 22px;
+    }
+
+    .what-row {
+      display: grid;
+      grid-template-columns: 74px minmax(360px, 1fr) 180px;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .project-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .project-list li {
+      margin-bottom: 8px;
+    }
+
+    .project-name {
+      color: #f0f1f2;
+    }
+
+    .project-name-muted {
+      color: #c2c8ce;
+    }
+
+    .project-status-inline {
+      display: none;
+      margin-top: 3px;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      color: #c2c8ce;
+    }
+
+    .project-meta {
+      color: #9ca2a8;
+      margin-left: 8px;
+      font-size: 12px;
+      letter-spacing: 0.07em;
+    }
+
+    .status-col {
+      justify-self: end;
+      padding-top: 2px;
+      text-align: right;
+    }
+
+    .status-item {
+      margin-bottom: 8px;
+      color: #c2c8ce;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+    }
+
+    [maher-element="terminal-text"],
+    [maher-element="terminal-mission"] {
+      opacity: 1;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (max-width: 1200px) {
+      .articles-grid,
+      .about-row,
+      .what-row {
+        grid-template-columns: 64px minmax(300px, 1fr) 150px;
+        gap: 18px;
+      }
+
+      .article-row {
+        grid-template-columns: minmax(260px, 1fr) 150px;
+        gap: 18px;
+      }
+    }
+
+    @media (max-width: 980px) {
+      .portfolio-shell {
+        padding: 16px 18px 20px;
+        overflow: auto;
+      }
+
+      .top-block,
+      .bottom-block {
+        width: 100%;
+      }
+
+      .articles-grid,
+      .about-row,
+      .what-row {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+
+      .header-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 28px;
+      }
+
+      .article-rows {
+        grid-column: auto;
+      }
+
+      .article-row {
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 10px;
+      }
+
+      .status-col {
+        justify-self: start;
+        text-align: left;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .portfolio-shell {
+        padding: 12px 12px 18px;
+      }
+
+      .top-nav {
+        gap: 8px;
+        font-size: 10px;
+      }
+
+      .article-row {
+        grid-template-columns: 1fr;
+        gap: 2px;
+      }
+
+      .tag-item {
+        justify-self: start;
+        text-align: left;
+      }
+
+      .about-copy {
+        max-width: 100%;
+      }
+
+      .project-list li {
+        margin-bottom: 10px;
+      }
+    }
+
+    @media (max-width: 980px) {
+      .status-col {
+        display: none;
+      }
+
+      .project-status-inline {
+        display: block;
+      }
+    }
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Tine Maher","givenName":"Tine","familyName":"Maher","url":"https://tinemaher.com/","mainEntityOfPage":"https://tinemaher.com/","description":"Technologist and builder focused on AI infrastructure, orchestration, and regulation-aware implementation.","knowsAbout":["AI Infrastructure","AI Orchestration","Data Privacy","AI Regulation","Digital Infrastructure"],"sameAs":["https://thewall.design"],"jobTitle":"Technologist & Builder","image":"https://tinemaher.com/og.png"}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebSite","name":"tinemaher.com","url":"https://tinemaher.com/","description":"Portfolio and article archive focused on AI infrastructure and applied AI strategy.","author":{"@type":"Person","name":"Tine Maher","url":"https://tinemaher.com/"},"publisher":{"@type":"Person","name":"Tine Maher","url":"https://tinemaher.com/"},"inLanguage":"en-US","potentialAction":{"@type":"SearchAction","target":"https://tinemaher.com/?q={search_term_string}","query-input":"required name=search_term_string"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"Latest Articles","itemListElement":[{"@type":"ListItem","position":1,"url":"https://tinemaher.com/articles/why-you-should-not-trust-ai-companies-and-llms/"},{"@type":"ListItem","position":2,"url":"https://tinemaher.com/articles/ai-regulatory-frameworks-and-data-privacy/"},{"@type":"ListItem","position":3,"url":"https://tinemaher.com/articles/enterprise-ai-ethical-integration-and-system-ownership/"},{"@type":"ListItem","position":4,"url":"https://tinemaher.com/articles/mckinsey-just-dropped-their-2025-ai-report/"},{"@type":"ListItem","position":5,"url":"https://tinemaher.com/articles/autonomous-revenue-orchestration/"},{"@type":"ListItem","position":6,"url":"https://tinemaher.com/articles/when-ai-integration-fails-klarna-reverses-ai-push/"},{"@type":"ListItem","position":7,"url":"https://tinemaher.com/articles/start-owning-your-data-with-local-ai/"}]}
+  </script>
+</head>
+
+<body>
+  <div id="root">
+    <canvas id="webgl-background" aria-hidden="true"></canvas>
+    <main class="portfolio-shell">
+      <section class="top-block" aria-label="Top Content">
+        <header class="header-row">
+          <div class="site-title mono">
+            <span maher-element="terminal-text" data-terminal-text="TINE MAHER"></span>
+          </div>
+          <nav class="top-nav mono" aria-label="Main Navigation">
+            <span>MORE//</span>
+            <a href="/about/">ABOUT</a>
+            <a href="/contact/">CONTACT</a>
+          </nav>
+        </header>
+
+        <section class="articles-grid" aria-label="Articles">
+          <div class="year-col mono">2026</div>
+          <ul class="article-rows">
+            <li class="article-row">
+              <a href="/articles/why-you-should-not-trust-ai-companies-and-llms/">Why you shouldn't trust AI Companies and their LLM's</a>
+              <span class="tag-item mono">AI, LLM'S</span>
+            </li>
+            <li class="article-row">
+              <a href="/articles/ai-regulatory-frameworks-and-data-privacy/">AI Regulatory Frameworks and Data Privacy</a>
+              <span class="tag-item mono">DATA PRIVACY</span>
+            </li>
+            <li class="article-row">
+              <a href="/articles/enterprise-ai-ethical-integration-and-system-ownership/">Ethical Enterprise AI Integration &amp; System Ownership</a>
+              <span class="tag-item mono">ETHICAL AI</span>
+            </li>
+            <li class="article-row">
+              <a href="/articles/mckinsey-just-dropped-their-2025-ai-report/">McKinsey Just Dropped Their 2025 AI Report</a>
+              <span class="tag-item mono">AI REPORT</span>
+            </li>
+            <li class="article-row">
+              <a href="/articles/autonomous-revenue-orchestration/">Autonomous Revenue Orchestration</a>
+              <span class="tag-item mono">ARO</span>
+            </li>
+            <li class="article-row">
+              <a href="/articles/when-ai-integration-fails-klarna-reverses-ai-push/">When AI Integration fails, Klarna Reverses AI Push</a>
+              <span class="tag-item mono">FAILS</span>
+            </li>
+            <li class="article-row">
+              <a href="/articles/start-owning-your-data-with-local-ai/">Start owning your data with local AI</a>
+              <span class="tag-item mono">LOCAL AI</span>
+            </li>
+          </ul>
+        </section>
+
+        <section id="about" class="about-row" aria-label="About">
+          <div class="label mono">ABOUT</div>
+          <div>
+            <p class="about-copy" maher-element="terminal-mission"
+              data-terminal-mission="Building control layers for AI systems. Architecting privacy-first, AI backed software and digital infrastructure.">
+              Building control layers for AI systems. Architecting privacy-first, AI backed software and digital
+              infrastructure.
+            </p>
+            <a class="about-link mono" href="/about/">LEARN MORE ABOUT ME &#8599;</a>
+          </div>
+          <div aria-hidden="true"></div>
+        </section>
+      </section>
+
+      <section id="what" class="bottom-block" aria-label="What">
+        <div class="what-row">
+          <div class="label mono">WHAT</div>
+          <ul class="project-list">
+            <li>
+              <a href="https://ar-o1.com" target="_blank" rel="noopener"><span class="project-name">Ar-o1 | AI
+                  Infrastructure &amp;
+                  Orchestration OS</span></a>
+              <span class="project-status-inline mono">BETA ACCESS</span>
+            </li>
+            <li>
+              <a href="https://thewall.design" target="_blank" rel="noopener"><span class="project-name">thewall_ |
+                  Research & Software
+                  Development</span></a>
+              <span class="project-status-inline mono">IN BUSINESS</span>
+            </li>
+            <li>
+              <span class="project-name project-name-muted">BLEKLINE | AI Firewall (Regulation Framework &amp; Data
+                Shield)</span>
+              <span class="project-status-inline mono">IN DEVELOPMENT</span>
+            </li>
+          </ul>
+          <div class="status-col mono">
+            <div class="status-item">BETA ACCESS</div>
+            <div class="status-item">IN BUSINESS</div>
+            <div class="status-item">IN DEVELOPMENT</div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
